@@ -4,108 +4,109 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif; /* Aplica a fonte definida na variável --body-font. */
-    background-color:#6e693e; /* Fundo da página com a cor verde-escuro. */
-    color: #ffffff; /* Cor padrão do texto branco. */
-    line-height: 1.6; /* Espaçamento entre linhas para melhor legibilidade. */
-    overflow-x: hidden; /* Previne rolagem horizontal indesejada, comum em designs responsivos. */
+    font-family: 'Montserrat', sans-serif;/* Aplica a fonte definida na variável --body-font. */
+    background-color: #6e693e;/* Fundo da página com a cor verde-escuro. */
+    color: #ffffff;/* Cor padrão do texto branco. */
+    line-height: 1.6;/* Espaçamento entre linhas para melhor legibilidade. */
+    overflow-x: hidden;/* Previne rolagem horizontal indesejada, comum em designs responsivos. */
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family:'Montserrat',sans-serif; /* Aplica a fonte de cabeçalho. */
-    color: #f26922; /* Cor laranja para os títulos. */
-    margin-bottom: 10px; /* Espaçamento abaixo dos títulos. */
-    line-height: 17px; /* Altura da linha para títulos, para que não fiquem muito juntos. */
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;/* Aplica a fonte de cabeçalho. */
+    color: #f26922;/* Cor laranja para os títulos. */
+    margin-bottom: 10px;/* Espaçamento abaixo dos títulos. */
+    line-height: 17px;/* Altura da linha para títulos, para que não fiquem muito juntos. */
 }
 
-.titulo{
-    font-size: 60px; /* Tamanho grande para destaque . */
-    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); /* Sombra para dar profundidade e destaque. */
-    
+.titulo {
+    font-size: 60px;/* Tamanho grande para destaque . */
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);/* Sombra para dar profundidade e destaque. */
+
 }
 
-.subtitulo{
-    color: #ffe066; /* Cor amarela suave para o subtítulo. */
+.subtitulo {
+    color: #ffe066;/* Cor amarela suave para o subtítulo. */
     font-size: 22px; /* Tamanho considerável para o subtítulo (equivalente a ~1.4rem). */
-    margin-top: 10px; /* Espaçamento acima. */
+    margin-top: 10px;/* Espaçamento acima. */
     font-weight: 600; /* Semi  Negrito. */
 
 }
 
-.sessao-titulo{
-    font-size: 40px; /* Tamanho que se destaca sem ser excessivo (equivalente a ~2.5rem). */
-    margin-bottom: 30px;/* Espaçamento generoso abaixo. */
-    text-align: center; /* Centraliza o texto. */
+.sessao-titulo {
+    font-size: 40px;/* Tamanho que se destaca sem ser excessivo (equivalente a ~2.5rem). */
+    margin-bottom: 30px; /* Espaçamento generoso abaixo. */
+    text-align: center;/* Centraliza o texto. */
     position: relative; /* Necessário para posicionar o pseudo-elemento ':after' relativo a ele. */
-    padding-bottom: 10px; /* Espaçamento inferior para a linha abaixo do título. */
+    padding-bottom: 10px;/* Espaçamento inferior para a linha abaixo do título. */
 
-   
+
 }
 
 
 p {
     margin-bottom: 20px; /* Espaçamento abaixo para separar parágrafos. */
-    font-size: 18px; /* Tamanho de fonte levemente maior para melhor legibilidade (equivalente a ~1.1rem). */
-    max-width: 800px; /* Limita a largura máxima do parágrafo, melhorando a legibilidade em telas largas. */
-    margin-left: auto; /* Centraliza o parágrafo horizontalmente. */
+    font-size: 18px;/* Tamanho de fonte levemente maior para melhor legibilidade (equivalente a ~1.1rem). */
+    max-width: 800px;/* Limita a largura máxima do parágrafo, melhorando a legibilidade em telas largas. */
+    margin-left: auto;/* Centraliza o parágrafo horizontalmente. */
     margin-right: auto; /* Centraliza o parágrafo horizontalmente. */
 }
 
 a {
-    color:  #f26922; /* Cor laranja para links. */
-    text-decoration: none; /* Remove o sublinhado padrão dos links. */
-    transition: color 0.3s ease, text-decoration 0.3s ease; /* Transição suave de cor e sublinhado ao interagir. */
+    color: #f26922;/* Cor laranja para links. */
+    text-decoration: none;/* Remove o sublinhado padrão dos links. */
+    transition: color 0.3s ease, text-decoration 0.3s ease;/* Transição suave de cor e sublinhado ao interagir. */
 
 }
 
-a:hover, a:focus {
-    color:  #f0f0f0; /* Muda a cor do texto para mais claro. */
-    text-decoration: underline; /* Adiciona sublinhado no hover/focus para indicar que é clicável. */
-    outline: none; /* Remove o outline padrão do navegador (para substituir por um visual customizado). */
+a:hover,
+a:focus {
+    color: #f0f0f0;/* Muda a cor do texto para mais claro. */
+    text-decoration: underline;/* Adiciona sublinhado no hover/focus para indicar que é clicável. */
+    outline: none;/* Remove o outline padrão do navegador (para substituir por um visual customizado). */
 }
 
 img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do seu contêiner pai. */
-    height: auto; /* Mantém a proporção da imagem para evitar distorções. */
-    display: block; /* Remove o espaço extra que navegadores adicionam abaixo de imagens inline. */
+    max-width: 100%;/* Garante que a imagem não ultrapasse a largura do seu contêiner pai. */
+    height: auto;/* Mantém a proporção da imagem para evitar distorções. */
+    display: block;/* Remove o espaço extra que navegadores adicionam abaixo de imagens inline. */
 }
 
 /* Estilo para texto em negrito (<strong>). */
 strong {
-    color:#ffe066; /* Dá um toque de cor ao texto importante. */
+    color: #ffe066;/* Dá um toque de cor ao texto importante. */
 }
 
-.cabecalho{
+.cabecalho {
     background-color: #2e2b26; /* Fundo escuro. */
-    padding: 50px 20px 20px; /* Preenchimento interno para espaçamento. */
-    text-align: center; /* Centraliza o texto. */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra para dar profundidade. */
+    padding: 50px 20px 20px;/* Preenchimento interno para espaçamento. */
+    text-align: center;/* Centraliza o texto. */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);/* Sombra para dar profundidade. */
     position: relative; /* Para posicionar o pseudo-elemento ':before' em relação a ele. */
-    overflow: hidden; /* Esconde qualquer conteúdo que vaze, importante para o pseudo-elemento. */
+    overflow: hidden;/* Esconde qualquer conteúdo que vaze, importante para o pseudo-elemento. */
 
 }
 
 
 .navbar {
-    position: sticky; /* Torna a barra de navegação "grudenta" (fixa no topo ao rolar). */
-    top: 0; /* Fica no topo. */
-    z-index: 1000; /* Garante que a navbar fique acima de outros elementos ao rolar. */
-    background: #1f1c17e6; /* Fundo com leve transparência. */
-    padding: 10px 0; /* Preenchimento vertical. */
+    position: sticky;/* Torna a barra de navegação "grudenta" (fixa no topo ao rolar). */
+    top: 0;/* Fica no topo. */
+    z-index: 1000;/* Garante que a navbar fique acima de outros elementos ao rolar. */
+    background: #1f1c17e6;/* Fundo com leve transparência. */
+    padding: 10px 0;/* Preenchimento vertical. */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* Sombra para destaque. */
     text-align: center; /* Centraliza os itens em desktop. */
-    backdrop-filter: blur(5px); /* Efeito de blur no fundo da navbar, dá um ar moderno e sofisticado. */
-    
+    backdrop-filter: blur(5px);/* Efeito de blur no fundo da navbar, dá um ar moderno e sofisticado. */
+
 }
 
 
 .navbar ul {
-    list-style: none; /* Remove os marcadores de lista padrão. */
+    list-style: none;/* Remove os marcadores de lista padrão. */
     margin: 0;
     padding: 0;
     display: flex; /* Usa Flexbox para organizar os links. */
     justify-content: center; /* Centraliza os links horizontalmente. */
-    flex-wrap: wrap; /* Permite que os links quebrem para a próxima linha em telas menores. */
+    flex-wrap: wrap;/* Permite que os links quebrem para a próxima linha em telas menores. */
 }
 
 .navbar li {
@@ -113,12 +114,12 @@ strong {
 }
 
 .navbar a {
-    color: #f26922; /* Cor dos links. */
+    color: #f26922;/* Cor dos links. */
     text-decoration: none; /* Sem sublinhado. */
-    font-weight: bold; /* Negrito. */
-    padding: 10px 10px; /* Espaçamento interno para área de clique. */
-    transition: all 0.3s ease; /* Transição suave para todas as propriedades CSS alteradas. */
-    border-radius: 5px; /* Cantos levemente arredondados nos links. */
+    font-weight: bold;/* Negrito. */
+    padding: 10px 10px;/* Espaçamento interno para área de clique. */
+    transition: all 0.3s ease;/* Transição suave para todas as propriedades CSS alteradas. */
+    border-radius: 5px;/* Cantos levemente arredondados nos links. */
 }
 
 .navbar a:hover,
@@ -128,70 +129,70 @@ strong {
     text-decoration: none;
     transform: translateY(-2px); /* Pequeno efeito de "elevação" para indicar interatividade. */
     outline: 2px solid #ffe066; /* Borda sólida no focus para acessibilidade. */
-    outline-offset: 2px; /* Desloca a borda para fora do elemento. */
+    outline-offset: 2px;/* Desloca a borda para fora do elemento. */
 }
 
-.sessao{
+.sessao {
     padding: 50px; /* Preenchimento interno generoso. */
     margin: 20px auto; /* Margem externa, 'auto' centraliza horizontalmente. */
-    max-width: 1000px; /* Largura máxima para legibilidade do conteúdo. */
-    background-color: #2e2b26; /* Fundo escuro da seção. */
-    border-left: 10px solid #f26922; /* Borda esquerda laranja, um elemento de design. */
-    border-radius: 15px; /* Cantos arredondados. */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada para destaque e profundidade. */
-    scroll-margin-top: 100px; /* Ajuste para que a seção não fique escondida atrás da navbar fixa ao rolar. */
-    display: flex; /* Usa Flexbox para organizar o conteúdo da seção. */
-    flex-direction: column; /* Itens dentro da seção empilhados verticalmente. */
-    align-items: center; /* Centraliza itens horizontalmente dentro da seção. */
-    text-align: center; /* Centraliza o texto. */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para hover. */
+    max-width: 1000px;/* Largura máxima para legibilidade do conteúdo. */
+    background-color: #2e2b26;/* Fundo escuro da seção. */
+    border-left: 10px solid #f26922;/* Borda esquerda laranja, um elemento de design. */
+    border-radius: 15px;/* Cantos arredondados. */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);/* Sombra mais pronunciada para destaque e profundidade. */
+    scroll-margin-top: 100px;/* Ajuste para que a seção não fique escondida atrás da navbar fixa ao rolar. */
+    display: flex;/* Usa Flexbox para organizar o conteúdo da seção. */
+    flex-direction: column;/* Itens dentro da seção empilhados verticalmente. */
+    align-items: center;/* Centraliza itens horizontalmente dentro da seção. */
+    text-align: center;/* Centraliza o texto. */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;/* Transição suave para hover. */
 
 }
 
-.palestra-card{
+.palestra-card {
     border: 10px solid #f26922; /* Mantém a borda. */
-    padding: 50px 30px; /* Preenchimento ajustado. */
+    padding: 50px 30px;/* Preenchimento ajustado. */
     border-radius: 50px;
 }
 
 .palestra-card .palestrante-info {
-    margin-bottom: 30px; /* Espaçamento abaixo das informações. */
-    padding: 10px; /* Preenchimento interno. */
-    background-color: rgba(0, 0, 0, 0.2); /* Fundo semi-transparente. */
-    border-radius: 8px; /* Cantos arredondados. */
+    margin-bottom: 30px;/* Espaçamento abaixo das informações. */
+    padding: 10px;/* Preenchimento interno. */
+    background-color: rgba(0, 0, 0, 0.2);/* Fundo semi-transparente. */
+    border-radius: 8px;/* Cantos arredondados. */
     width: fit-content; /* Largura se ajusta ao conteúdo. */
-    margin-left: auto; /* Centraliza. */
+    margin-left: auto;/* Centraliza. */
     margin-right: auto; /* Centraliza. */
 }
 
 .palestra-card .palestrante-nome {
-    font-size: 22px; /* Tamanho da fonte do nome . */
-    color:  #ffe066; /* Cor amarela suave. */
-    margin-bottom: 5px; /* Pequeno espaçamento. */
+    font-size: 22px;/* Tamanho da fonte do nome . */
+    color: #ffe066;/* Cor amarela suave. */
+    margin-bottom: 5px;/* Pequeno espaçamento. */
 }
 
 .palestra-card .palestrante-cargo {
-    font-size: 18px; /* Tamanho da fonte do cargo */
+    font-size: 18px;/* Tamanho da fonte do cargo */
     color: #f0f0f0; /* Cor mais clara. */
 }
 
 .palestra-card .palestrante-img {
-    width: 100%; /* Largura total do contêiner. */
-    max-width: 450px; /* Limite máximo da largura. */
-    border-radius: 15px; /* Cantos arredondados. */
+    width: 100%;/* Largura total do contêiner. */
+    max-width: 450px;/* Limite máximo da largura. */
+    border-radius: 15px;/* Cantos arredondados. */
     margin-top: 30px; /* Espaçamento acima. */
     border: 5px solid #f26922; /* Borda grossa e colorida. */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Sombra para a imagem. */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);/* Sombra para a imagem. */
     transition: transform 0.3s ease, border-color 0.3s ease; /* Transição suave no hover. */
 }
 
 .palestra-card .palestrante-img:hover {
-    transform: scale(1.02); /* Leve zoom na imagem no hover. */
-    border-color: #ffe066; /* Muda a cor da borda no hover. */
+    transform: scale(1.02);/* Leve zoom na imagem no hover. */
+    border-color: #ffe066;/* Muda a cor da borda no hover. */
 }
 
 .info-evento {
-    background-color: #1f1c17e6; /* Fundo da cor da navbar. */
+    background-color: #1f1c17e6;/* Fundo da cor da navbar. */
     border-left: none; /* Remove a borda esquerda para diferenciar. */
     padding: 50px;
     text-align: center;
@@ -203,150 +204,145 @@ strong {
 }
 
 .info-evento p {
-    font-size: 19px; /* Tamanho da fonte (equivalente a ~1.2rem). */
+    font-size: 19px;/* Tamanho da fonte (equivalente a ~1.2rem). */
     margin-bottom: 10px;
-    display: flex; /* Usa Flexbox para alinhar ícone e texto na mesma linha. */
-    align-items: center; /* Alinha verticalmente ícone e texto. */
-    gap: 10px; /* Espaçamento entre o ícone e o texto. */
+    display: flex;/* Usa Flexbox para alinhar ícone e texto na mesma linha. */
+    align-items: center;/* Alinha verticalmente ícone e texto. */
+    gap: 10px;/* Espaçamento entre o ícone e o texto. */
 }
 
 .info-evento p i {
-    color: #f26922; /* Cor dos ícones. */
-    font-size: 24px; /* Tamanho dos ícones (equivalente a ~1.5rem). */
+    color: #f26922;/* Cor dos ícones. */
+    font-size: 24px;/* Tamanho dos ícones (equivalente a ~1.5rem). */
 }
 
 .info-evento .destaque-info {
-    font-size: 29px; /* Tamanho maior para o texto em destaque (equivalente a ~1.8rem). */
-    color:#ffe066; /* Cor amarela suave. */
-    font-weight: bold; /* Negrito. */
-    margin-top:20px;
-    text-transform: uppercase; /* Converte para maiúsculas. */
+    font-size: 29px;/* Tamanho maior para o texto em destaque (equivalente a ~1.8rem). */
+    color: #ffe066;/* Cor amarela suave. */
+    font-weight: bold;/* Negrito. */
+    margin-top: 20px;
+    text-transform: uppercase;/* Converte para maiúsculas. */
     animation: pulse 1.5s infinite; /* Aplica a animação 'pulse'. */
 }
 
 @keyframes pulse {
-    0% { transform: scale(1); } /* Início: tamanho normal. */
-    50% { transform: scale(1.05); } /* Meio: ligeiramente maior. */
-    100% { transform: scale(1); } /* Fim: volta ao normal. */
+    0% {transform: scale(1); } /* Início: tamanho normal. */
+    50% {transform: scale(1.05);}/* Meio: ligeiramente maior. */
+    100% {transform: scale(1);}/* Fim: volta ao normal. */
 }
 
 .evento-info-box {
-    background: #6e693e; 
+    background: #6e693e;
     padding: 20px;
-    border-left: 8px solid  #ffcc00; /* Borda esquerda colorida. */
-    margin-bottom:30px;
-    text-align: left; /* Alinha o texto à esquerda dentro da caixa. */
+    border-left: 8px solid #ffcc00; /* Borda esquerda colorida. */
+    margin-bottom: 30px;
+    text-align: left;/* Alinha o texto à esquerda dentro da caixa. */
     border-radius: 8px; /* Cantos arredondados. */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil. */
     width: 100%;
     max-width: 600px;
-  } 
-  
-  .evento-info-box p {
-      color: #ffffff; /* Garante que o texto dentro da caixa seja claro. */
-      font-size: 18px; 
-      margin-bottom: 5px;
-    }
-    .galeria-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-auto-rows: 250px; /* Define a altura padrão de cada linha */
-  gap: 20px;
-  padding: 20px;
-  width: 100%;
-  max-width: 100%;
-  justify-items: center;
-  box-sizing: border-box;
+}
+
+.evento-info-box p {
+    color: #ffffff;/* Garante que o texto dentro da caixa seja claro. */
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;/* Define a altura padrão de cada linha */
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 100%;
+    justify-items: center;
+    box-sizing: border-box;
 }
 
 .galeria-img {
-  width: 100%;
-  height: 100%; /* Ocupa a célula do grid */
-  object-fit: cover;
-  border-radius: 12px;
-  border: 3px solid #f26922;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    height: 100%;/* Ocupa a célula do grid */
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid #f26922;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .galeria-img:hover {
-  transform: scale(1.03);
-  border-color: #ffe066;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+    border-color: #ffe066;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
 .galeria-img.vertical {
-  grid-row: span 2; /* Ocupa duas linhas */
+    grid-row: span 2;/* Ocupa duas linhas */
 }
 
-    .main-footer {
-        background-color: #1e5631;
-        padding: 30px;
-        text-align: center;
-        font-size: 16px;
-        color: #ffffff;
-        margin-top: 50px;
-        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
-      }
-      
-      .footer-conteudo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-      }
-      
-      .contato-footer {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        flex-shrink: 0;
-      }
-      
-      .insta {
-        width: 20px;
-        height: auto;
-        transition: transform 0.3s ease, filter 0.3s ease;
-        cursor: pointer;
-      }
-      
-     
-      .contato-footer:hover .insta {
-        transform: scale(1.2);
-        filter: brightness(1.3);
-      }
-      
-      .contato-footer a {
-        color: #ffe066;
-        font-weight: 600;
-        text-decoration: none;
-        transition: color 0.3s ease, text-decoration 0.3s ease;
-      }
-   
-      .contato-footer a:hover {
-        color: #ffffff;
-        text-decoration: underline;
-      }
+.main-footer {
+    background-color: #1e5631;
+    padding: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 50px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
 
-      .footer-scroll {
-        display: flex;
-        align-items: center;
-        justify-content: space-between; /* Ícone à esquerda, texto à direita */
-        white-space: nowrap;
-        overflow-x: auto;
-        max-width: 100%;
-        padding: 0 20px;
-        gap: 20px;
-      }
-      
-      .rodape-linha {
-        display: inline-block;
-        margin: 0;
-        text-align: right;
-      }
-      
-   
-      
-  
-    
-   
+.footer-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.contato-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+}
+
+.insta {
+    width: 20px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+
+.contato-footer:hover .insta {
+    transform: scale(1.2);
+    filter: brightness(1.3);
+}
+
+.contato-footer a {
+    color: #ffe066;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.contato-footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-scroll {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/* Ícone à esquerda, texto à direita */
+    white-space: nowrap;
+    overflow-x: auto;
+    max-width: 100%;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.rodape-linha {
+    display: inline-block;
+    margin: 0;
+    text-align: right;
+}
