@@ -1,3 +1,18 @@
+/* Paleta de cores do site Pint of Science Ivaiporã 2025 */
+:root {
+    --cor-primaria: #f26922;    /* Laranja */
+    --cor-secundaria: #ffe066;  /* Amarelo suave */
+    --cor-fundo: #6e693e;       /* Verde-escuro */
+    --cor-fundo-escuro: #2e2b26;/* Marrom escuro */
+    --cor-navbar: #1f1c17e6;    /* Marrom escuro translúcido */
+    --cor-destaque: #ffcc00;    /* Amarelo destaque */
+    --cor-footer: #1e5631;      /* Verde footer */
+    --cor-texto: #ffffff;       /* Branco */
+    --cor-texto-secundario: #f0f0f0; /* Branco suave */
+}
+
+
+
 /* Propriedade para rolagem suave da página ao clicar em links de âncora (ex: no menu de navegação). */
 html {
     scroll-behavior: smooth;
@@ -8,7 +23,6 @@ body {
     background-color: #6e693e;/* Fundo da página com a cor verde-escuro. */
     color: #ffffff;/* Cor padrão do texto branco. */
     line-height: 1.6;/* Espaçamento entre linhas para melhor legibilidade. */
-    overflow-x: hidden;/* Previne rolagem horizontal indesejada, comum em designs responsivos. */
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -19,9 +33,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .titulo {
-    font-size: 60px;/* Tamanho grande para destaque . */
+    font-size: clamp(1.5rem, 5vw, 2.8rem); /* mínimo 1.5rem, ideal 5vw, máximo 2.8rem */
+    word-break: break-word;
+    text-align: center;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);/* Sombra para dar profundidade e destaque. */
-
 }
 
 .subtitulo {
@@ -82,20 +97,18 @@ strong {
     text-align: center;/* Centraliza o texto. */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);/* Sombra para dar profundidade. */
     position: relative; /* Para posicionar o pseudo-elemento ':before' em relação a ele. */
-    overflow: hidden;/* Esconde qualquer conteúdo que vaze, importante para o pseudo-elemento. */
 
 }
 
 
 .navbar {
     position: sticky;/* Torna a barra de navegação "grudenta" (fixa no topo ao rolar). */
-    top: 0;/* Fica no topo. */
+    top: 0px;/* Fica no topo. */
     z-index: 1000;/* Garante que a navbar fique acima de outros elementos ao rolar. */
     background: #1f1c17e6;/* Fundo com leve transparência. */
     padding: 10px 0;/* Preenchimento vertical. */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* Sombra para destaque. */
     text-align: center; /* Centraliza os itens em desktop. */
-    backdrop-filter: blur(5px);/* Efeito de blur no fundo da navbar, dá um ar moderno e sofisticado. */
 
 }
 
@@ -184,6 +197,9 @@ strong {
     border: 5px solid #f26922; /* Borda grossa e colorida. */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);/* Sombra para a imagem. */
     transition: transform 0.3s ease, border-color 0.3s ease; /* Transição suave no hover. */
+    display: block;           /* Garante que a imagem seja um bloco */
+    margin-left: auto;        /* Centraliza horizontalmente */
+    margin-right: auto; 
 }
 
 .palestra-card .palestrante-img:hover {
@@ -335,7 +351,7 @@ strong {
     align-items: center;
     justify-content: space-between;/* Ícone à esquerda, texto à direita */
     white-space: nowrap;
-    overflow-x: auto;
+
     max-width: 100%;
     padding: 0 20px;
     gap: 20px;
