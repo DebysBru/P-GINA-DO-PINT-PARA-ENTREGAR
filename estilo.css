@@ -44,7 +44,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 22px; /* Tamanho considerável para o subtítulo (equivalente a ~1.4rem). */
     margin-top: 10px;/* Espaçamento acima. */
     font-weight: 600; /* Semi  Negrito. */
-
+    
 }
 
 .sessao-titulo {
@@ -59,12 +59,13 @@ h1,h2,h3,h4,h5,h6 {
 
 
 p {
+    text-align: center;
     margin-bottom: 20px; /* Espaçamento abaixo para separar parágrafos. */
     font-size: 18px;/* Tamanho de fonte levemente maior para melhor legibilidade (equivalente a ~1.1rem). */
     max-width: 800px;/* Limita a largura máxima do parágrafo, melhorando a legibilidade em telas largas. */
     margin-left: auto;/* Centraliza o parágrafo horizontalmente. */
     margin-right: auto; /* Centraliza o parágrafo horizontalmente. */
-}
+    line-height: 1.6;/* Espaçamento entre linhas para melhor legibilidade. */}
 
 a {
     color: #f26922;/* Cor laranja para links. */
@@ -75,7 +76,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #f0f0f0;/* Muda a cor do texto para mais claro. */
+    color: #ffe066;/* Muda a cor do texto para mais claro. */
     text-decoration: underline;/* Adiciona sublinhado no hover/focus para indicar que é clicável. */
     outline: none;/* Remove o outline padrão do navegador (para substituir por um visual customizado). */
 }
@@ -161,12 +162,34 @@ strong {
     transition: transform 0.3s ease, box-shadow 0.3s ease;/* Transição suave para hover. */
 
 }
+.sessao ul{
+    text-align: left;
+    margin: 0 auto;
+    max-width: 650px; /* Limita a largura da lista para melhor legibilidade. */;
+    padding-left: 24px; /* Preenchimento interno para a lista. */
+}
+
+.palestrantes-container {
+    display: flex;/* Usa Flexbox para organizar os cartões de palestrantes. */
+    gap: 40px;/* Espaçamento entre os cartões. */
+    justify-content: center;/* Centraliza os cartões horizontalmente. */
+    align-items: stretch;/* Alinha os cartões para que tenham a mesma altura. */
+    Flex-wrap: wraP;/* Permite que os cartões quebrem para a próxima linha em telas menores. */
+    margin-bottom: 40px;/* Espaçamento abaixo dos cartões. */
+}
+
 
 .palestra-card {
     border: 10px solid #f26922; /* Mantém a borda. */
     padding: 50px 30px;/* Preenchimento ajustado. */
     border-radius: 50px;
-}
+    display: flex;/* Usa Flexbox para organizar o conteúdo. */
+    flex-direction: column;/* Itens empilhados verticalmente. */
+    align-items: center;/* Centraliza itens horizontalmente. */
+    text-align: center;/* Centraliza o texto dentro do cartão. */
+    justify-content: center;
+    flex: 1 1 320px;/* Permite que o cartão cresça e encolha, com uma base mínima de 320px. */
+} 
 
 .palestra-card .palestrante-info {
     margin-bottom: 30px;/* Espaçamento abaixo das informações. */
@@ -206,6 +229,11 @@ strong {
     transform: scale(1.02);/* Leve zoom na imagem no hover. */
     border-color: #ffe066;/* Muda a cor da borda no hover. */
 }
+
+ .palestra-card .palestra-resumo {
+    padding: 14px 18px;/* Preenchimento interno para o resumo. */
+    margin-top: 18px;/* Espaçamento acima do resumo. */
+ }
 
 .info-evento {
     background-color: #1f1c17e6;/* Fundo da cor da navbar. */
@@ -265,6 +293,18 @@ strong {
     margin-bottom: 5px;
 }
 
+#ivaipora ul li::marker {
+    color: #ffcc00; /* Cor amarela suave para os marcadores da lista. */
+    font-size: 1.2em; /* Tamanho maior para os marcadores. */
+}
+
+#curiosidades ul li::marker {
+    color: #ffcc00;
+    font-size: 1.2em;
+}
+
+
+
 .galeria-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -316,9 +356,11 @@ strong {
 
 .contato-footer {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 8px;
-    flex-shrink: 0;
+    gap: 10px;
+    flex-shrink: 0; /* Impede que o contêiner encolha */
+    margin-top: 20px; /* Espaçamento acima do contêiner de contato */
 }
 
 .insta {
@@ -362,3 +404,4 @@ strong {
     margin: 0;
     text-align: right;
 }
+
