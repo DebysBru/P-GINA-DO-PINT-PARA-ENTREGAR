@@ -169,6 +169,23 @@ strong {
     padding-left: 24px; /* Preenchimento interno para a lista. */
 }
 
+.palestra-card .sessao-titulo {
+    font: size 18px;
+    text-align: center;           /* Centraliza o texto */
+    color: #f26922;               /* Mantém a cor laranja */
+    margin-bottom: 18px;          /* Espaço abaixo do título */
+    margin-top: 0;                /* Remove espaço acima */
+    line-height: 1.2;             /* Altura de linha confortável */
+    word-break: break-word;       /* Evita estouro em telas pequenas */
+    padding: 0 8px;               /* Espaço lateral para não encostar na borda */
+}
+
+@media (max-width: 600px) {
+    .palestra-card .sessao-titulo {
+        font-size: 1.1rem;       /* Reduz o tamanho em telas pequenas */
+        padding: 0 2px;
+    }
+}
 .palestrantes-container {
     display: flex;/* Usa Flexbox para organizar os cartões de palestrantes. */
     gap: 40px;/* Espaçamento entre os cartões. */
